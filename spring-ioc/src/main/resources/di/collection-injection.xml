@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.1.xsd
+http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+<bean id="collection" class="com.fku.spring.ioc.di.CollectionInjection" >
+	<property name="map">
+		<map>
+			<entry key="1" value="Hello1" />
+			<entry key="2" value="Hello2" />
+		</map>
+	</property>
+	<property name="props">
+		<props>
+			<prop key="url">jdbc:mysql://10.154.250.19:3306</prop>
+			<prop key="user">wangjiu</prop>
+		</props>
+	</property>
+	<property name="list">
+		<list>
+			<value>value1</value>
+			<value>value1</value>
+			<value>value3</value>
+		</list>
+	</property>
+	<property name="set">
+		<set>
+			<value>value1</value>
+			<value>value1</value>
+			<value>value3</value>
+		</set>
+	</property>
+</bean>
+
+	 
+</beans>
