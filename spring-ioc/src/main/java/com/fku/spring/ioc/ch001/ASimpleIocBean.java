@@ -16,9 +16,4 @@ public class ASimpleIocBean {
         System.out.println("username...." + username);
     }
 
-    public static void main(String[] args) {
-        ApplicationContext ctxt = new ClassPathXmlApplicationContext("classpath:com.fku.spring.ioc.ch001/injectSimple.xml");
-        ASimpleIocBean sb = ctxt.getBean("a", ASimpleIocBean.class);
-        sb.doing();
-    }
 }
